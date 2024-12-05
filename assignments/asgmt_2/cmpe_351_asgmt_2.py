@@ -50,7 +50,7 @@ else:
     SCRIPT_DIR = dirname(realpath(__file__))
 
 DATA_DIR = join(SCRIPT_DIR, "data")
-IMG_DIR = join(DATA_DIR, "img")
+IMG_DIR = join(DATA_DIR, "images")
 
 # %% [markdown]
 #
@@ -158,13 +158,13 @@ img_transform = transforms.Compose(
 
 # %%
 train_dataset = FashionProductImageDataset(
-    join(DATA_DIR, "img"),
+    IMG_DIR,
     transform=img_transform,
     targets_file=join(DATA_DIR, "train.csv"),
 )
 
 test_dataset = FashionProductImageDataset(
-    join(DATA_DIR, "img"),
+    IMG_DIR,
     transform=img_transform,
     targets_file=join(DATA_DIR, "test.csv"),
 )
