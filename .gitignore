@@ -502,3 +502,7 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,latex,visualstudiocode
+
+# Generated data/models.
+data/
+models/
